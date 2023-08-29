@@ -1,0 +1,29 @@
+footer.footer {
+  // margin-top: $section-gap;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer-copy-info {
+  color: $grey-200;
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+@include until(map-get($breakpoints, 'md')) {
+  .footer-wrapper {
+    flex-direction: column;
+  }
+
+  .footer-copy {
+    margin-bottom: $gap;
+  }
+}

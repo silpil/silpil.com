@@ -1,0 +1,79 @@
+.firstscreen {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 $container-offset;
+  width: auto;
+  max-width: 1280px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - #{$header-height});
+  margin-top: -#{$header-height};
+}
+
+.firstscreen-content {
+  margin-left: 4rem;
+  min-width: 480px;
+}
+
+.firstscreen-image {
+  margin-top: 4rem;
+}
+
+.firstscreen-title {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 2.3rem;
+
+  margin-bottom: 1.2rem;
+}
+
+.firstscreen-description {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7rem;
+  margin-bottom: 2rem;
+
+  max-width: 500px;
+}
+
+.firstscreen-action {
+  min-width: 360px;
+  text-transform: uppercase;
+}
+
+@include until(map-get($breakpoints, 'lg')) {
+  .firstscreen {
+    max-width: 100%;
+  }
+
+  .firstscreen-content {
+    margin: 0;
+  }
+}
+
+@include until(map-get($breakpoints, 'md')) {
+  .firstscreen {
+    display: block;
+    margin: 0;
+    height: auto;
+  }
+
+  .firstscreen-content {
+    margin: 0;
+    min-width: 100%;
+  }
+
+  .firstscreen-image {
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .firstscreen-action {
+    min-width: 100%;
+  }
+}

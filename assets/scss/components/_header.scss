@@ -1,0 +1,13 @@
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $header-height;
+}
+
+.header-logo {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: $primary;
+  text-decoration: none;
+}
