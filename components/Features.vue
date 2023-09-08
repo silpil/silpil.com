@@ -6,7 +6,7 @@
 
 <template>
   <Section>
-    <div class="container px-6 mx-auto -mt-45">
+    <div class="container px-6 mx-auto md:-mt-80">
       <h2 class="text-2xl text-gray-800 capitalize lg:text-3xl dark:text-white font-black" v-html="content?.title" />
 
       <p class="mt-4 text-gray-500 xl:mt-6 dark:text-gray-300">

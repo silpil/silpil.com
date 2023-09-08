@@ -1,4 +1,4 @@
-import { defineConfig, presetIcons, presetUno, presetTypography, presetMini, presetWind, presetWebFonts } from 'unocss'
+import { defineConfig, presetIcons, presetUno, presetTypography, presetMini, presetWebFonts } from 'unocss'
 import { presetForms } from '@julr/unocss-preset-forms'
 
 export function createConfig({ dev = true } = {}) {
@@ -161,7 +161,6 @@ export function createConfig({ dev = true } = {}) {
       presetMini({
         dark: 'class'
       }),
-      presetWind(),
       presetUno(),
       presetForms(),
       presetIcons({

@@ -1,11 +1,7 @@
 <script setup lang='ts'>
-import { ref, onMounted, onUnmounted } from 'vue'
-
-const isDarkMode: any = ref(false)
+import { onMounted, onUnmounted } from 'vue'
 
 onMounted(() => {
-    isDarkMode.value = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-
     const gradientCursor: any = document.querySelector('.cursor')
     const contentWrapper: any = document.querySelector('main')
 
@@ -31,10 +27,8 @@ onMounted(() => {
 
 <template>
   <div class="cursor z-0 transition duration-300" />
-  <main :class="{ 'dark': isDarkMode }">
-    <div class="bg-white dark:bg-black font-sans overflow-hidden">
-      <slot />
-    </div>
+  <main class="bg-white dark:bg-black font-sans overflow-hidden">
+    <slot />
   </main>
 </template>
 

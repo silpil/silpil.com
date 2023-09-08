@@ -11,13 +11,7 @@
       <div class="lg:flex lg:items-center">
         <div class="w-full space-y-12 lg:w-1/2 ">
           <div>
-            <h2 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">{{ content?.title }}</h2>
-
-            <div class="mt-2">
-              <span class="inline-block w-20 h-1 bg-primary-500 rounded-full"></span>
-              <span class="inline-block w-5 h-1 ml-1 bg-primary-500 rounded-full"></span>
-              <span class="inline-block w-2 h-1 ml-1 bg-primary-500 rounded-full"></span>
-            </div>
+            <h2 class="text-2xl text-gray-800 lg:text-3xl dark:text-white font-black">{{ content?.title }}</h2>
           </div>
 
           <div v-for="card in content?.cards" class="md:flex md:items-start md:-mx-4">
@@ -36,17 +30,16 @@
         </div>
 
         <div class="hidden lg:flex lg:w-1/2 lg:justify-center">
-          <img class="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-full" src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80" alt="">
+          <img class="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-full" src="/code-image.jpg" alt="">
         </div>
       </div>
 
       <hr class="mb-20 mt-40 border-gray-200 dark:border-gray-700">
 
       <div class="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-4">
-        <!-- TODO: add img hidden if dark mode on store -->
         <div v-for="logo in content?.logos" class="flex items-center justify-center col-span-2 md:col-span-2 lg:col-span-1 p-8 space-y-3">
-          <img :src="logo.black" alt="" style="width: 150px; height: auto;" class="dark:display-none">
-          <img :src="logo.white" alt="" style="width: 150px; height: auto;" class="display-none dark:display-block">
+          <img v-if="$colorMode.value === 'light'" :src="logo.black" alt="" style="width: 150px; height: auto;">
+          <img v-if="$colorMode.value === 'dark'" :src="logo.white" alt="" style="width: 150px; height: auto;">
         </div>
       </div>
     </div>

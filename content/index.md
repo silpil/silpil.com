@@ -1,31 +1,38 @@
 ---
+seo:
+  title: 'Web & App Developer | Custom Solutions with JS, TS, Node.js'
+  ogTitle: 'Web & App Developer | Custom Solutions with JS, TS, Node.js'
+  description: 'Web and app developer utilizing JS, TS, Node.js to create custom solutions for your business needs.'
+  ogDescription: 'Web and app developer utilizing JS, TS, Node.js to create custom solutions for your business needs.'
+  ogImage: '/open-graph.png'
+  twitterCard: 'summary_large_image'
 hero:
   title:
     <span>I make</span>
     <span class="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline uppercase">websites</span>
     <span>and</span>
     <span class="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline uppercase">apps</span>
-  text: I am focused on JS, TS, and Node.js, with a dash of design insight ensuring a balance between functionality and aesthetics.
+  text: I'm focused on JS, TS, and Node.js, making sure designs are both functional and attractive
   description: Hi, my name is Anton
-features:
-  title: My Expertise
-  description: Leveraging a blend of technical skills and creativity to deliver exceptional digital solutions.
+services:
+  title: My Services
+  description: I combine tech and creativity for great digital solutions
   cards:
     -
       icon: i-mdi-console-line
       title: Frontend Developer
-      text: Proficient in Vue.js, TypeScript, and other modern web technologies to create seamless user experiences.
+      text: Good at Vue.js, Nuxt.js, TypeScript, and modern web tools for smooth user experiences
     -
       icon: i-mdi-brush
       title: Designer
-      text: Adept at using tools like Figma to design intuitive and visually appealing interfaces.
+      text: Good with tools like Figma to make nice and easy-to-use designs
     -
       icon: i-mdi-database-cog-outline
       title: Backend Developer
-      text: Experience with Node.js and related backend technologies to ensure robust and scalable applications.
+      text: I use Node.js and backend technologies to build strong apps and use CI/CD for better deployment
 portfolio:
   title: Portfolio
-  description: A showcase of my work across various sectors, from IT to Retail, reflecting my versatility and commitment to excellence.
+  description: A showcase of my work across various sectors, from IT to Retail, reflecting my versatility and commitment to excellence
   skills:
     -
       text: Web Development
@@ -41,17 +48,33 @@ portfolio:
       link: '#'
   projects:
     -
-      type: Web Development
-      title: Briskly Project
-      image: https://images.unsplash.com/photo-1621111848501-8d3634f82336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1565&q=80
+      title: Breed Finder
+      description: Modern breed selection questionnaire developed on Nuxt.js
+      image: '/breedfinder-preview.png'
+      date: 2023-08-05
+      category: web
+      color: 'bg-[#E2001A]/80'
     -
-      type: App Development
-      title: Sportmaster App
-      image: https://images.unsplash.com/photo-1621609764180-2ca554a9d6f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80
+      title: Briskly website
+      description: Modern website on Nuxt.js
+      image: '/briskly-preview.png'
+      date: 2023-08-05
+      category: web
+      color: 'bg-[#22C951]/80'
     -
-      type: UI/UX Design
-      title: ModulBank Design
-      image: https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
+      title: OS Widget
+      description: Design and development of a ticket purchasing widget for events, featuring a seating chart
+      image: '/os-widget-preview.png'
+      date: 2023-08-05
+      category: web
+      color: 'bg-[#FA461E]/80'
+    -
+      title: Shoping Cart
+      description: Project on redesigning the shopping cart for an ecommerce with an improved user interface
+      image: '/shopingcart-preview.png'
+      date: 2023-08-05
+      category: web
+      color: 'bg-[#0966E5]/80'
 
 about:
   title: About Me
@@ -72,19 +95,19 @@ about:
     - 
       icon: i-ic-sharp-business-center
       title: Experience
-      text: With a rich experience spanning over 7 years, I've had the privilege to work with renowned companies like Sportmaster, Briskly, Royal Canin, and Modulbank.
+      text: Over 7 years in the field, working with companies like Sportmaster, Briskly, Royal Canin, and Modulbank
     -
       icon: i-ic-sharp-code
       title: Skills
-      text: My technical arsenal includes JS, TS, Node.js, and a flair for design.
+      text: I know JS, TS, Node.js, and have a good sense for design
     -
       icon: i-ic-sharp-school
       title: Education
-      text: I graduated with a degree in Computer Science from the University of Technology.
+      text: Graduated from the University of Technology with a degree in Computer Science
 
-contact:
+contacts:
   title: Get in Touch
-  description: I'm always open to new opportunities and collaborations. Whether you have a project in mind or just want to say Hi, feel free to drop me a message.
-  email: sg@ooos.ru
+  description: I'm always ready for new projects and teamwork. If you have an idea or just want to say Hi, message me.
+  email: info@ooos.site
   message: Hi! I'm from your site...
 ---

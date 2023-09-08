@@ -1,16 +1,18 @@
 <script setup lang="ts">
-  const route = useRoute()
-
-  const { data }: any = await useAsyncData('get-document', () => queryContent(route.path).findOne())
+  const route: any = useRoute()
+  const { data }: any = await useAsyncData(`get-${route.name}`, () => queryContent(route.path).findOne())
+  const navigation: any = await useAsyncData(`navigation`, () => queryContent('navigation').findOne())
+  
+  useSeoMeta(data.value.seo)
 </script>
 
 
 <template>
-  <Header />
+  <Header :links="navigation.data.value.links" />
   <Hero :content="data.hero" />
-  <Features :content="data.features" />
-  <Portfolio :content="data.portfolio" />
-  <About :content="data.about" />
-  <Contact :content="data.contact" />
-  <Footer />
+  <Features id="services" :content="data.services" />
+  <Portfolio id="portfolio" :content="data.portfolio" />
+  <About id="about" :content="data.about" />
+  <Contact id="contacts" :content="data.contacts" />
+  <Footer :links="navigation.data.value.links" />
 </template>

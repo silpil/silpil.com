@@ -1,26 +1,5 @@
-// Fonts
-// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
 @import '@unocss/reset/tailwind.css';
 
-// // Abstracts
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
-
-// // Base
-// @import 'base/typogrphy';
-
-// // Layout
-@import 'layout/default';
-
-// // Components
-// @import 'components/header';
-@import 'components/footer';
-// @import 'components/firstscreen';
-// @import 'components/callback';
-
-// // Elements
-// @import 'elements/button';
-// @import 'elements/form';
-
-// // Pages
-// @import 'pages/index';
+html {
+  scroll-behavior: smooth;
+}
