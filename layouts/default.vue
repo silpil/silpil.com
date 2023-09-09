@@ -1,7 +1,19 @@
 <script setup lang='ts'>
-import { onMounted, onUnmounted } from 'vue'
+  import { onMounted, onUnmounted } from 'vue'
 
-onMounted(() => {
+  useHead({
+    script: [
+      {
+        src: 'https://umami.silpil.com/umami.js',
+        async: true,
+        defer: true,
+        tagPosition: 'bodyClose',
+        'data-website-id': 'fabd34aa-deb7-4a47-b0e0-546f18aa27f4'
+      }
+    ]
+  })
+
+  onMounted(() => {
     const gradientCursor: any = document.querySelector('.cursor')
     const contentWrapper: any = document.querySelector('main')
 
@@ -22,7 +34,7 @@ onMounted(() => {
       document.removeEventListener('mousemove', handleMouseMove)
       window.removeEventListener('resize', setCursorHeight)
     })
-})
+  })
 </script>
 
 <template>
