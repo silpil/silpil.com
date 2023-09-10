@@ -1,8 +1,15 @@
-# Content v2 Minimal Starter
+<div align="center">
+  <img alt="Logo" src="https://raw.githubusercontent.com/silpil/silpil.com/master/public/logo.png" width="100" />
+</div>
+<h1 align="center">
+  silpil.com
+</h1>
+<p align="center">
+  My personal website. Built with <a href="https://nuxt.com/" target="_blank">Nuxt</a>, <a href="https://jamstack.org/" target="_blank">Jamstack</a>, <a href="https://content.nuxtjs.org/" target="_blank">Nuxt Content</a>. Deployed via <a href="https://caprover.com/" target="_blank">Caprover</a>, styled with <a href="https://tailwindcss.com/" target="_blank">Tailwind</a> and <a href="https://unocss.dev/" target="_blank">UnoCSS</a>, using UI&nbsp;Components from <a href="https://merakiui.com/">MerakiUI</a> and <a href="https://preline.co/">Preline</a>.
+</p>
 
-Look at the [Content documentation](https://content-v2.nuxtjs.org/) to learn more.
 
-## Setup
+## 🔧 Setup
 
 Make sure to install the dependencies:
 
@@ -17,7 +24,7 @@ npm install
 pnpm install
 ```
 
-## Development Server
+## 💻 Development Server
 
 Start the development server on http://localhost:3000
 
@@ -25,12 +32,12 @@ Start the development server on http://localhost:3000
 npm run dev
 ```
 
-## Production
+## 🚀 Production
 
 Build the application for production:
 
 ```bash
-npm run build
+npm run generate
 ```
 
 Locally preview production build:
@@ -39,4 +46,7 @@ Locally preview production build:
 npm run preview
 ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
+## 🐳 Docker with CapRover
+
+The project has a `Dockerfile` for creating an application image, deployable with CapRover.
+
