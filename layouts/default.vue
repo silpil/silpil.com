@@ -4,11 +4,9 @@
   useHead({
     script: [
       {
-        src: 'https://umami.silpil.com/umami.js',
-        async: true,
+        src: 'https://metrika.silpil.com/script.js',
         defer: true,
-        tagPosition: 'bodyClose',
-        'data-website-id': 'fabd34aa-deb7-4a47-b0e0-546f18aa27f4'
+        'data-website-id': 'fe45b77c-fc5c-40fc-ba0b-ba38f74afb05'
       }
     ]
   })
