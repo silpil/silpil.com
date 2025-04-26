@@ -108,6 +108,6 @@ about:
 contacts:
   title: Get in Touch
   description: I'm always ready for new projects and teamwork. If you have an idea or just want to say Hi, message me.
-  email: info@ooos.site
+  email: silpil.dev@gmail.com
   message: Hi! I'm from your site...
 ---
