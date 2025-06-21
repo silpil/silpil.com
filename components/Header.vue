@@ -7,7 +7,7 @@
 
 <template>
   <header class="relative">
-    <div class="container mx-auto p-6 lg:py-8 flex items-center justify-between text-slate-700 font-semibold text-sm leading-6 dark:text-slate-200">
+    <div class="container mt-2 md:mt-10 mx-auto p-6 lg:py-8 flex items-center justify-between text-slate-700 font-semibold text-sm leading-6 dark:text-slate-200">
       <Logo class="shrink-0" />
       <div class="flex flex-col">
         <div class="md:hidden">

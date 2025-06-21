@@ -33,6 +33,7 @@ services:
 portfolio:
   title: Portfolio
   description: A showcase of my work across various sectors, from IT to Retail, reflecting my versatility and commitment to excellence
+  email: silpil.dev@gmail.com
   skills:
     -
       text: Web Development

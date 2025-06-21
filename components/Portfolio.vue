@@ -18,8 +18,16 @@
         </div>
         <div class="rounded-lg border-gray-400/5 dark:border-gray-300/5 bg-primary-100/30 dark:bg-gray-100/3 h-96">
           <div class="flex flex-col justify-center w-full h-full px-13 py-10">
-            <h3 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white capitalize">Your project here</h3>
-            <p class="mt-2 text-md tracking-wider text-gray-800 dark:text-white ">Start a project <a href="mailto:info@ooos.site" class="text-primary-500 font-semibold">info@ooos.site</a></p>
+            <h3 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white capitalize">
+              Your project here
+            </h3>
+            
+            <p class="mt-2 text-md tracking-wider text-gray-800 dark:text-white ">
+              Start a project
+              <a :href="`mailto:${content.email}`" class="text-primary-500 font-semibold">
+                {{ content.email }}
+              </a>
+            </p>
           </div>
         </div>
       </div>
