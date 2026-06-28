@@ -2,15 +2,13 @@ FROM node:18-slim as builder
 
 WORKDIR /app
 
+COPY package*.json ./
+
+RUN npm ci
+
 COPY . .
 
-RUN yarn install \
-  --prefer-offline \
-  --frozen-lockfile \
-  --non-interactive \
-  --production=false
-
-RUN yarn generate
+RUN npm run generate
 
 FROM nginx:alpine
 
